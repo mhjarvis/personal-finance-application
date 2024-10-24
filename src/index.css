@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: 0% auto;
+	font-family: "Public Sans", sans-serif;
+}
+
+@media screen and (min-width: 360px) {
+	.body {
+		font-size: 31.25%;
+	}
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
