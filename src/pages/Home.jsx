@@ -1,12 +1,10 @@
-import PrimaryButton from "../components/atoms/Buttons/PrimaryButton";
-import PageTitle from "../components/atoms/PageTitle/PageTitle";
 import MainLayout from "../components/layouts/MainLayoutl";
+import OverviewHeader from "../components/molecules/Overview/OverviewHeader";
 
 export default function Home() {
 	return (
 		<MainLayout>
-			<PageTitle title="Overview" />
-			<PrimaryButton text="+ Add New Budget" />
+			<OverviewHeader></OverviewHeader>
 		</MainLayout>
 	);
 }

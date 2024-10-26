@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./PrimaryButton.css";
 
-export default function PrimaryButton({ text }) {
+export default function PrimaryButton({ text, id }) {
 	return (
 		<div>
-			<button className="primary-button">{text}</button>
+			<button className="primary-button" id={id}>
+				{text}
+			</button>
 		</div>
 	);
 }

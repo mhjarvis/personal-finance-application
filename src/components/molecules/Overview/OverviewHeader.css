@@ -1,0 +1,15 @@
+.overview-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#overview__button--primary {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	#overview__button--primary {
+		display: block;
+	}
+}
