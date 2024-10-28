@@ -1,5 +1,5 @@
 import "./OverviewHeader.css";
-import PageTitle from "../../atoms/PageTitle/PageTitle";
+import PageTitle from "../PageTitle/PageTitle";
 /* eslint-disable react/prop-types */
 
 export default function OverviewHeader() {
