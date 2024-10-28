@@ -4,7 +4,7 @@ import OverviewHeader from "../components/molecules/Overview/OverviewHeader";
 export default function Home() {
 	return (
 		<MainLayout>
-			<OverviewHeader></OverviewHeader>
+			<OverviewHeader />
 		</MainLayout>
 	);
 }
