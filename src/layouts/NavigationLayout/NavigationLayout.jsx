@@ -8,11 +8,19 @@ import recurringBillsIcon from "../../assets/images/icon-nav-recurring-bills.svg
 export default function NavigationLayout() {
 	return (
 		<div className="navigation-layout">
-			<img src={homeIcon} alt="Home icon" />
-			<img src={arrowsIcon} alt="Transactions icon" />
-			<img src={budgetIcon} alt="Budget icon" />
-			<img src={potsIcon} alt="Pots icon" />
-			<img src={recurringBillsIcon} alt="Recurring Bills icon" />
+			<img src={homeIcon} alt="Home icon" className="navigation__icon" />
+			<img
+				src={arrowsIcon}
+				alt="Transactions icon"
+				className="navigation__icon"
+			/>
+			<img src={budgetIcon} alt="Budget icon" className="navigation__icon" />
+			<img src={potsIcon} alt="Pots icon" className="navigation__icon" />
+			<img
+				src={recurringBillsIcon}
+				alt="Recurring Bills icon"
+				className="navigation__icon"
+			/>
 		</div>
 	);
 }
