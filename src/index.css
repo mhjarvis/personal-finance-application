@@ -36,11 +36,28 @@
 	--black: #fff;
 
 	/* TYPOGRAPHY PRESETS */
+
+	/* Font Size */
 	--preset-1-size: 3.2rem;
 	--preset-2-size: 2rem;
 	--preset-3-size: 1.6rem;
 	--preset-4-size: 1.4rem;
 	--preset-5-size: 1.2rem;
+
+	/* Line Height */
+	--preset-1-2-lh: 120%;
+	--preset-3-4-lh: 150%;
+
+	/* SPACING PRESETS */
+
+	--s500: 40px;
+	--s400: 32px;
+	--s300: 24px;
+	--s250: 20px;
+	--s200: 16px;
+	--s150: 12px;
+	--s100: 8px;
+	--s50: 4px;
 }
 
 *,
