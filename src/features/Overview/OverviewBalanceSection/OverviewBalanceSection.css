@@ -1,0 +1,6 @@
+.balance-section {
+	margin: 3.2rem 0 1.6rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
