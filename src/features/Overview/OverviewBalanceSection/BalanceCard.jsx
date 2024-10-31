@@ -7,13 +7,22 @@ export default function BalanceCard({
 	background = "white",
 	text = "black",
 }) {
+	const displayAmount = updateAmount(amount);
+
+	function updateAmount(num) {
+		return new Intl.NumberFormat("en-US", {
+			minimumFractionDigits: 2,
+			maximumFractionDigits: 2,
+		}).format(num);
+	}
+
 	return (
 		<div
 			className="balance-card"
 			style={{ backgroundColor: background, color: text }}
 		>
 			<p className="balance-card__title">{title}</p>
-			<p className="balance-card__amount">${amount}</p>
+			<p className="balance-card__amount">${displayAmount}</p>
 		</div>
 	);
 }
