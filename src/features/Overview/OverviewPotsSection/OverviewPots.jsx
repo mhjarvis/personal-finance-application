@@ -6,7 +6,15 @@ import SmallPot from "../../../common/components/SmallPot/SmallPot.jsx";
 
 // eslint-disable-next-line no-unused-vars
 export default function OverviewPots({ pots }) {
-	const total = 850;
+	const total = getTotal(pots);
+	function getTotal(obj) {
+		let amt = Object.values(obj)
+			.map((value) => Number(value))
+			.reduce((acc, value) => acc + value, 0);
+
+		return amt;
+	}
+
 	return (
 		<div className="overview-pots__container">
 			<div className="overview-pots__header">
