@@ -1,0 +1,72 @@
+.overview-pots__container {
+	background-color: white;
+	border-radius: 12px;
+	padding: 2.4rem;
+}
+
+.overview-pots__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.overview-pots__title {
+	font-size: var(--preset-2-size);
+	color: var(--grey-900);
+	font-weight: 700;
+}
+
+.overview-pots__button-container {
+	display: flex;
+}
+
+.overview-pots__button {
+	border: none;
+	font-size: var(--preset-4-size);
+	color: var(--grey-500);
+	background-color: white;
+	margin-right: var(--s200);
+	cursor: pointer;
+}
+
+.overview-pots__card-container {
+	background-color: var(--beige-100);
+	display: flex;
+	align-items: center;
+	height: 11rem;
+	border-radius: 12px;
+	margin: var(--s300) 0;
+}
+
+.overview-pots__card-container {
+	padding: 1.6rem;
+}
+
+.overview-pots__saved-container {
+	margin-left: var(--s300);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 7rem;
+}
+
+.money-pot-icon {
+	width: 4rem;
+	height: 4rem;
+}
+
+.overview-pots__saved-text {
+	font-size: var(--preset-4-size);
+	color: var(--grey-500);
+}
+
+.overview-pots__saved-amount {
+	font-size: var(--preset-1-size);
+	font-weight: 700;
+}
+
+.small-pots-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.6rem;
+}

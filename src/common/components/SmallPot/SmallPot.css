@@ -1,0 +1,31 @@
+.small-pot {
+	display: flex;
+	align-items: center;
+}
+
+.vertical-line {
+	width: 4px;
+	height: 4.3rem;
+	border-radius: 8px;
+}
+
+.info-container {
+	height: 4.3rem;
+	margin-left: var(--s200);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.title {
+	font-size: var(--preset-5-size);
+	color: var(--grey-500);
+	line-height: 120%;
+}
+
+.amount {
+	font-size: var(--preset-4-size);
+	font-weight: 700;
+	color: var(--grey-900);
+	line-height: 120%;
+}

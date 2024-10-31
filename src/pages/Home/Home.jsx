@@ -4,8 +4,8 @@ import MainLayout from "../../layouts/MainLayout/MainLayoutl";
 import OverviewHeader from "../../features/Overview/OverviewHeader/OverviewHeader";
 import NavigationLayout from "../../layouts/NavigationLayout/NavigationLayout";
 import OverviewBalanceSection from "../../features/Overview/OverviewBalanceSection/OverviewBalanceSection";
-import BalanceCard from "../../features/Overview/OverviewBalanceSection/BalanceCard";
 import { useState } from "react";
+import OverviewPots from "../../features/Overview/OverviewPotsSection/OverviewPots";
 
 export default function Home() {
 	const [balances, setBalances] = useState({
@@ -14,30 +14,19 @@ export default function Home() {
 		expenses: 1700.5,
 	});
 
+	const [pots, setPots] = useState({
+		savings: 159.0,
+		gift: 40.0,
+		concertTicket: 110.0,
+		newLaptop: 10.0,
+	});
+
 	return (
 		<div className="home">
 			<MainLayout>
 				<OverviewHeader />
-				<OverviewBalanceSection>
-					<BalanceCard
-						title="Current Balance"
-						amount={balances.currentBalance}
-						background="black"
-						text="white"
-					/>
-					<BalanceCard
-						title="Income"
-						amount={balances.income}
-						background="white"
-						text="black"
-					/>{" "}
-					<BalanceCard
-						title="Expenses"
-						amount={balances.expenses}
-						background="white"
-						text="black"
-					/>
-				</OverviewBalanceSection>
+				<OverviewBalanceSection balances={balances} />
+				<OverviewPots pots={pots} />
 			</MainLayout>
 			<NavigationLayout />
 		</div>
