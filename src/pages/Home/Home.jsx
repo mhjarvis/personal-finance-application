@@ -22,6 +22,8 @@ export default function Home() {
 		newLaptop: 10.0,
 	});
 
+	const [transactions, setTransactions] = useState([{}]);
+
 	return (
 		<div className="home">
 			<MainLayout>

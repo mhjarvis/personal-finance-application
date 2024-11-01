@@ -1,0 +1,9 @@
+.container {
+	background-color: white;
+	border-radius: 12px;
+	padding: 2.4rem;
+	margin-top: var(--s200);
+}
+
+.transactions__container {
+}
