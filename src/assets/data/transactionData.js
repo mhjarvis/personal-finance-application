@@ -5,6 +5,7 @@ export const transactionData = [
 		category: "General",
 		date: "19 Aug 2024",
 		amount: 75.5,
+		type: "add",
 	},
 	{
 		name: "Savory Bites Bistro",
@@ -12,5 +13,30 @@ export const transactionData = [
 		category: "Dinning Out",
 		date: "19 Aug 2024",
 		amount: 55.5,
+		type: "subtract",
+	},
+	{
+		name: "Daniel Carter",
+		url: "src/assets/avatars/daniel-carter.jpg",
+		category: "General",
+		date: "18 Aug 2024",
+		amount: 42.3,
+		type: "subtract",
+	},
+	{
+		name: "Sun Park",
+		url: "src/assets/avatars/sun-park.jpg",
+		category: "General",
+		date: "17 Aug 2024",
+		amount: 120,
+		type: "add",
+	},
+	{
+		name: "Urban Services Hub",
+		url: "src/assets/avatars/urban-services-hub.jpg",
+		category: "General",
+		date: "17 Aug 2024",
+		amount: 65,
+		type: "subtract",
 	},
 ];
