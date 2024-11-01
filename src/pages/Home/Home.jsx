@@ -8,6 +8,7 @@ import { useState } from "react";
 import OverviewPots from "../../features/Overview/OverviewPotsSection/OverviewPots";
 import OverviewTransactions from "../../features/Overview/OverviewTransactions/OverviewTransactions";
 import { transactionData } from "../../assets/data/transactionData";
+import OverviewBudgets from "../../features/Overview/OverviewBudgets/OverviewBudgets";
 
 export default function Home() {
 	const [balances, setBalances] = useState({
@@ -32,6 +33,7 @@ export default function Home() {
 				<OverviewBalanceSection balances={balances} />
 				<OverviewPots pots={pots} />
 				<OverviewTransactions data={transactions} />
+				<OverviewBudgets />
 			</MainLayout>
 			<NavigationLayout />
 		</div>

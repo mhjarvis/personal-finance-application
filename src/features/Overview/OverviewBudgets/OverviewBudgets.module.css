@@ -1,0 +1,12 @@
+.budget__container {
+	background-color: white;
+	border-radius: 12px;
+	padding: 2.4rem;
+	margin-top: var(--s200);
+}
+
+.budget__items {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.6rem;
+}
