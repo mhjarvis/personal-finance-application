@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import "./OverviewPots.css";
-import chevron from "../../../assets/images/icon-caret-right.svg";
 import money from "../../../assets/images/icon-pot.svg";
 import SmallPot from "../../../common/components/SmallPot/SmallPot.jsx";
 import CardHeader from "../CardHeader/CardHeader.jsx";
@@ -18,7 +17,7 @@ export default function OverviewPots({ pots }) {
 
 	return (
 		<div className="overview-pots__container">
-			<CardHeader title="Pots" buttonInfo="See Details" link={chevron} />
+			<CardHeader title="Pots" buttonInfo="See Details" />
 			<div className="overview-pots__card-container">
 				<img src={money} alt="Money pot icon" className="money-pot-icon" />
 				<div className="overview-pots__saved-container">
