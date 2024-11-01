@@ -7,6 +7,7 @@ import OverviewBalanceSection from "../../features/Overview/OverviewBalanceSecti
 import { useState } from "react";
 import OverviewPots from "../../features/Overview/OverviewPotsSection/OverviewPots";
 import OverviewTransactions from "../../features/Overview/OverviewTransactions/OverviewTransactions";
+import { transactionData } from "../../assets/data/transactionData";
 
 export default function Home() {
 	const [balances, setBalances] = useState({
@@ -22,7 +23,7 @@ export default function Home() {
 		newLaptop: 10.0,
 	});
 
-	const [transactions, setTransactions] = useState([{}]);
+	const [transactions, setTransactions] = useState(transactionData);
 
 	return (
 		<div className="home">
@@ -30,7 +31,7 @@ export default function Home() {
 				<OverviewHeader />
 				<OverviewBalanceSection balances={balances} />
 				<OverviewPots pots={pots} />
-				<OverviewTransactions />
+				<OverviewTransactions data={transactions} />
 			</MainLayout>
 			<NavigationLayout />
 		</div>
