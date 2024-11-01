@@ -4,31 +4,6 @@
 	padding: 2.4rem;
 }
 
-.overview-pots__header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.overview-pots__title {
-	font-size: var(--preset-2-size);
-	color: var(--grey-900);
-	font-weight: 700;
-}
-
-.overview-pots__button-container {
-	display: flex;
-}
-
-.overview-pots__button {
-	border: none;
-	font-size: var(--preset-4-size);
-	color: var(--grey-500);
-	background-color: white;
-	margin-right: var(--s200);
-	cursor: pointer;
-}
-
 .overview-pots__card-container {
 	background-color: var(--beige-100);
 	display: flex;

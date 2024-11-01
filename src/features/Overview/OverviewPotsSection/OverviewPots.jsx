@@ -4,7 +4,6 @@ import money from "../../../assets/images/icon-pot.svg";
 import SmallPot from "../../../common/components/SmallPot/SmallPot.jsx";
 import CardHeader from "../CardHeader/CardHeader.jsx";
 
-// eslint-disable-next-line no-unused-vars
 export default function OverviewPots({ pots }) {
 	const total = getTotal(pots);
 	function getTotal(obj) {
