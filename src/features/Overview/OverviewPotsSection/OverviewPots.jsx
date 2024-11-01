@@ -3,6 +3,7 @@ import "./OverviewPots.css";
 import chevron from "../../../assets/images/icon-caret-right.svg";
 import money from "../../../assets/images/icon-pot.svg";
 import SmallPot from "../../../common/components/SmallPot/SmallPot.jsx";
+import CardHeader from "../CardHeader/CardHeader.jsx";
 
 // eslint-disable-next-line no-unused-vars
 export default function OverviewPots({ pots }) {
@@ -17,13 +18,7 @@ export default function OverviewPots({ pots }) {
 
 	return (
 		<div className="overview-pots__container">
-			<div className="overview-pots__header">
-				<p className="overview-pots__title">Pots</p>
-				<div className="overview-pots__button-container">
-					<button className="overview-pots__button">See Details</button>
-					<img src={chevron} alt="Right caret icon" className="chevron" />
-				</div>
-			</div>
+			<CardHeader title="Pots" buttonInfo="See Details" link={chevron} />
 			<div className="overview-pots__card-container">
 				<img src={money} alt="Money pot icon" className="money-pot-icon" />
 				<div className="overview-pots__saved-container">
