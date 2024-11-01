@@ -15,6 +15,7 @@ export default function OverviewTransactions({ data }) {
 						url={charge.url}
 						date={charge.date}
 						amount={charge.amount}
+						type={charge.type}
 					/>
 				))}
 			</div>
