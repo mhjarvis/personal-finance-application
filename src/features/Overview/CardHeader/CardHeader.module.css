@@ -1,0 +1,23 @@
+.card-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: var(--preset-2-size);
+	color: var(--grey-900);
+	font-weight: 700;
+}
+.details-container {
+	display: flex;
+}
+
+.details__button {
+	border: none;
+	font-size: var(--preset-4-size);
+	color: var(--grey-500);
+	background-color: white;
+	margin-right: var(--s200);
+	cursor: pointer;
+}
