@@ -1,0 +1,41 @@
+.transaction {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
+.transaction:not(:last-child) {
+	border-bottom: 1px solid var(--grey-100);
+}
+
+.name__container {
+	display: flex;
+	align-items: center;
+}
+
+.transaction__image {
+	height: 3.2rem;
+	width: 3.2rem;
+	border-radius: 50%;
+}
+
+.transaction__name {
+	color: var(--grey-900);
+	font-weight: 700;
+	margin-left: var(--s200);
+}
+
+.info__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.info__amount {
+	color: var(--green);
+	font-size: var(--preset-4-size);
+	font-weight: 700;
+}
+
+.info__name {
+}
