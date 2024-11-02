@@ -9,6 +9,7 @@ import OverviewPots from "../../features/Overview/OverviewPotsSection/OverviewPo
 import OverviewTransactions from "../../features/Overview/OverviewTransactions/OverviewTransactions";
 import { transactionData } from "../../assets/data/transactionData";
 import OverviewBudgets from "../../features/Overview/OverviewBudgets/OverviewBudgets";
+import { budgetData } from "../../assets/data/budgetData";
 
 export default function Home() {
 	const [balances, setBalances] = useState({
@@ -25,6 +26,7 @@ export default function Home() {
 	});
 
 	const [transactions, setTransactions] = useState(transactionData);
+	const [budget, setBudget] = useState(budgetData);
 
 	return (
 		<div className="home">
@@ -33,7 +35,7 @@ export default function Home() {
 				<OverviewBalanceSection balances={balances} />
 				<OverviewPots pots={pots} />
 				<OverviewTransactions data={transactions} />
-				<OverviewBudgets />
+				<OverviewBudgets budget={budget}></OverviewBudgets>
 			</MainLayout>
 			<NavigationLayout />
 		</div>
