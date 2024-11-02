@@ -9,6 +9,7 @@ import OverviewPots from "../../features/Overview/OverviewPotsSection/OverviewPo
 import OverviewTransactions from "../../features/Overview/OverviewTransactions/OverviewTransactions";
 import { transactionData } from "../../assets/data/transactionData";
 import OverviewBudgets from "../../features/Overview/OverviewBudgets/OverviewBudgets";
+import OverviewBills from "../../features/Overview/OverviewBills/OverviewBills";
 import { budgetData } from "../../assets/data/budgetData";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
 				<OverviewPots pots={pots} />
 				<OverviewTransactions data={transactions} />
 				<OverviewBudgets budget={budget}></OverviewBudgets>
+				<OverviewBills />
 			</MainLayout>
 			<NavigationLayout />
 		</div>
