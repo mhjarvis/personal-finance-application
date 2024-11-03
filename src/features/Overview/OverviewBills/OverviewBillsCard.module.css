@@ -1,0 +1,23 @@
+.container {
+	padding: 2rem 1.6rem;
+	background-color: var(--beige-100);
+	border-radius: 8px;
+	border-left: 5px solid;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container:not(:first-child) {
+	margin-top: var(--s200);
+}
+
+.name {
+	color: var(--grey-500);
+	font-size: var(--preset-5-size);
+}
+
+.amount {
+	color: var(--grey-900);
+	font-weight: 700;
+	font-size: var(--preset-4-size);
+}
