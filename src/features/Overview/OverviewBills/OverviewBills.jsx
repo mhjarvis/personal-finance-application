@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import styles from "./OverviewBills.module.css";
 import CardHeader from "../CardHeader/CardHeader";
 import OverviewBillsCard from "../OverviewBills/OverviewBillsCard";
