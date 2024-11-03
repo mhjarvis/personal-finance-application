@@ -11,6 +11,7 @@ import { transactionData } from "../../assets/data/transactionData";
 import OverviewBudgets from "../../features/Overview/OverviewBudgets/OverviewBudgets";
 import OverviewBills from "../../features/Overview/OverviewBills/OverviewBills";
 import { budgetData } from "../../assets/data/budgetData";
+import { recurringBillsData } from "../../assets/data/recurringBillsData";
 
 export default function Home() {
 	const [balances, setBalances] = useState({
@@ -28,6 +29,7 @@ export default function Home() {
 
 	const [transactions, setTransactions] = useState(transactionData);
 	const [budget, setBudget] = useState(budgetData);
+	const [recurringBills, setRecurringBills] = useState(recurringBillsData);
 
 	return (
 		<div className="home">
@@ -37,7 +39,7 @@ export default function Home() {
 				<OverviewPots pots={pots} />
 				<OverviewTransactions data={transactions} />
 				<OverviewBudgets budget={budget}></OverviewBudgets>
-				<OverviewBills />
+				<OverviewBills recurringBills={recurringBills} />
 			</MainLayout>
 			<NavigationLayout />
 		</div>
