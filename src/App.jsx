@@ -1,5 +1,6 @@
-import Home from "./pages/Home/Home";
-
+import Transactions from "./pages/Transactions/Transactions";
+/* import Home from "./pages/Home/Home";
+ */
 export default function App() {
-	return <Home />;
+	return <Transactions />;
 }
