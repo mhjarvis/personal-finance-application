@@ -1,3 +1,4 @@
-export default function TransactionMain() {
-	return <div>test</div>;
+/* eslint-disable react/prop-types */
+export default function TransactionMain({ data }) {
+	return <div>{data[0].name}</div>;
 }
