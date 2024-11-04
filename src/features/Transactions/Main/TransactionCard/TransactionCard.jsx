@@ -2,6 +2,13 @@
 import styles from "./TransactionCard.module.css";
 
 export default function TransactionCard({ data }) {
+	function updateAmount(num) {
+		return new Intl.NumberFormat("en-US", {
+			minimumFractionDigits: 2,
+			maximumFractionDigits: 2,
+		}).format(num);
+	}
+
 	return (
 		<div className={styles.card}>
 			{data.map((item, i) => (
@@ -11,10 +18,14 @@ export default function TransactionCard({ data }) {
 						alt="Avatar Icon"
 						className={styles.card__image}
 					/>
-					<p className={styles.card__name}>{item.name}</p>
-					<p className={styles.card__category}>{item.category}</p>
-					<p className={styles.card__date}>{item.date}</p>
-					<p className={styles.card__amount}>{item.amount}</p>
+					<div className={styles["card__stack--1"]}>
+						<p className={styles.card__name}>{item.name}</p>
+						<p className={styles.card__category}>{item.category}</p>
+					</div>
+					<div className={styles["card__stack--2"]}>
+						<p className={styles.card__amount}>${updateAmount(item.amount)}</p>
+						<p className={styles.card__date}>{item.date}</p>
+					</div>
 				</div>
 			))}
 		</div>

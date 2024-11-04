@@ -1,0 +1,33 @@
+.card {
+}
+
+.card__container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 1.6rem 0;
+}
+
+.card__stack--1 {
+	margin-left: 1rem;
+}
+
+.card__stack--2 {
+	position: absolute;
+	right: 0;
+}
+
+.card__container:not(:last-child) {
+	border-bottom: 1px solid var(--grey-100);
+}
+
+.card__image {
+	width: 3.2rem;
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+	.card__image {
+		width: 4rem;
+	}
+}
