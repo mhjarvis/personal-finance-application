@@ -12,7 +12,7 @@ export default function TransactionMain({ data }) {
 		<div className={styles.container}>
 			<TransactionSort />
 			<TransactionCardHeader />
-			<TransactionCard />
+			<TransactionCard data={data} />
 			<TransactionPages />
 		</div>
 	);
