@@ -1,17 +1,16 @@
 /* eslint-disable no-unused-vars */
 import TransactionPageButton from "./TransactionPageButton";
 import styles from "./TransactionPages.module.css";
-import leftCaret from "../assets/images/icon-caret-left.svg";
-import rightCaret from "../assets/images/icon-caret-right.svg";
+import LeftCaret from "/src/assets/images/icon-caret-left.svg";
+import RightCaret from "/src/assets/images/icon-caret-right.svg";
 
 export default function TransactionPages() {
 	return (
 		<div className={styles.container}>
-			<button>{leftCaret}</button>
 			<div className={styles.pages__container}>
-				<TransactionPageButton content={leftCaret} />
+				<TransactionPageButton content={LeftCaret} />
 				{}
-				<TransactionPageButton content={rightCaret} />
+				<TransactionPageButton content={RightCaret} />
 			</div>
 		</div>
 	);
