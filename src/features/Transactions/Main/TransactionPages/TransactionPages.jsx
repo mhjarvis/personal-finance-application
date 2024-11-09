@@ -10,6 +10,7 @@ export default function TransactionPages() {
 			<div className={styles.pages__container}>
 				<TransactionPageButton content={LeftCaret} />
 				{}
+
 				<TransactionPageButton content={RightCaret} />
 			</div>
 		</div>
